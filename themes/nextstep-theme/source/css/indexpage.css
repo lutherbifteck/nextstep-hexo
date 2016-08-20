@@ -1,0 +1,192 @@
+body {
+  background-image: url(../img/happy-people.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+ /* CSS Hamburgers https://jonsuh.com/hamburgers/?utm_source=Responsive+Design+Weekly */
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: #fff;
+}
+
+.xtra-links {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  display: none;
+
+}
+
+.shown {
+  display: block;
+}
+
+.xtra-links.shown {display: block; opacity: 1;}
+
+.navbar {
+  border: none;
+}
+
+.h1 small,
+.navbar-inverse .navbar-text {
+  color: #fff;
+}
+
+.navbar-toggle {display: block !important;border:none;}
+
+
+
+
+h1, .h1 {
+  font-size: 5em;
+  color: #fff;
+  margin:0;
+  padding:0;
+}
+
+.section {
+  text-align:center;
+}
+
+/*body.alt-layout,*/
+#section1 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b4c8e+0,1b2877+100 */
+  background: rgba(43,76,142, .95); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(43,76,142,.95) 0%, rgba(27,40,119,.95) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(43,76,142,.95) 0%,rgba(27,40,119,.95) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(43,76,142,.95) 0%,rgba(27,40,119,.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b4c8e', endColorstr='#1b2877',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* fullpage js/nav stuff */
+.no_transition {
+    transition: none !important;
+}
+
+.ns-vert-arrow-up,
+.ns-vert-arrow-down {
+  position: absolute;
+  display: block;
+  left: 50%;
+  margin-left: -12px;
+  font-family: FontAwesome;
+  font-size: 3em;
+  color: white;
+  z-index: 2000 !important;
+  opacity: .8;
+}
+
+.fp-next,
+.fp-prev {opacity: .8 !important;}
+
+.fp-next:hover,
+.fp-prev:hover,
+.ns-vert-arrow-up:hover,
+.ns-vert-arrow-down:hover {
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.ns-vert-arrow-up { top: 0;}
+.ns-vert-arrow-down { bottom: 0;}
+
+.ns-vert-arrow-up::before {
+  content: '\f0d8';
+}
+.ns-vert-arrow-down::after {
+  content: '\f0d7';
+}
+
+.ns-vert-arrow-up::after,
+.ns-vert-arrow-down::before{
+  position: absolute;
+  font-size: 14px;
+  display: block;
+
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.ns-vert-arrow-up::after {
+  content: 'Jobs';
+  left: -3px;
+  top: 45px;
+}
+
+.ns-vert-arrow-down::before {
+  content: 'Contact Us';
+  position: absolute;
+  display: block;
+  width: 100px;
+  left: -28px;
+  bottom: 43px;
+}
+
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next {
+  border: none;
+}
+
+.fp-controlArrow.fp-next {
+  right: 70px;
+}
+
+.fp-controlArrow.fp-prev::before {
+  content: '\f0d9';
+  font-family: FontAwesome;
+  font-size: 3em;
+}
+
+
+.fp-controlArrow.fp-next::after {
+  content: '\f0da';
+  font-family: FontAwesome;
+  font-size: 3em;
+}
+
+.fp-controlArrow.fp-prev::after {
+  content: 'Mission';
+    position: relative;
+    top: -10px;
+    left: 10px;
+
+}
+
+.fp-controlArrow.fp-next::before {
+  content: 'About';
+    position: relative;
+    top: -10px;
+    right: 10px;
+}
+
+
+.home-message-before::before {content: "Home" !important; left: -11px;}
+.home-message-after::after {content: "Home" !important; left: -11px;}
+
+.mission-message-before::before {content: "Mission" !important;}
+.mission-message-after::after {content: "Mission" !important;}
+
+.about-message-before::before {content: "About" !important;}
+.about-message-after::after {content: "About" !important;}
+
+#next-step-logo {
+  max-width: 300px; 
+  height: auto;
+}
+
+
+@media (max-width: 767px) {
+  .fp-next,
+  .fp-prev,
+  .ns-vert-arrow-up,
+  .ns-vert-arrow-down {
+    display: none !important;
+  }
+}
