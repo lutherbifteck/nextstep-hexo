@@ -1,0 +1,5 @@
+TODO:
+
+-Make additional pages
+
+-Right now every page will load with, e.g., indexpage.css and fullpage.js. We need to figure out a way to have these appear conditionally depending on the page.
